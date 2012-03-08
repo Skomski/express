@@ -1,7 +1,6 @@
-
 DOCS = docs/*.md
 HTMLDOCS = $(DOCS:.md=.html)
-REPORTER = dot
+REPORTER = tap
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
